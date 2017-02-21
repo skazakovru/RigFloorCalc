@@ -17,6 +17,7 @@
 		73033E5D1E59FF65003B9FDD /* TableViewWithMultipleVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73033E5C1E59FF65003B9FDD /* TableViewWithMultipleVCUITests.swift */; };
 		73033E6B1E5A0025003B9FDD /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73033E6A1E5A0025003B9FDD /* TableViewVC.swift */; };
 		73033E6D1E5A289F003B9FDD /* A_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73033E6C1E5A289F003B9FDD /* A_ViewController.swift */; };
+		73DC61AB1E5C593500BBC6D5 /* B_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		73033E5E1E59FF65003B9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73033E6A1E5A0025003B9FDD /* TableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		73033E6C1E5A289F003B9FDD /* A_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_ViewController.swift; sourceTree = "<group>"; };
+		73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				73033E3B1E59FF65003B9FDD /* ViewController.swift */,
 				73033E6A1E5A0025003B9FDD /* TableViewVC.swift */,
 				73033E6C1E5A289F003B9FDD /* A_ViewController.swift */,
+				73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */,
 				73033E3D1E59FF65003B9FDD /* Main.storyboard */,
 				73033E431E59FF65003B9FDD /* Assets.xcassets */,
 				73033E451E59FF65003B9FDD /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				73033E6B1E5A0025003B9FDD /* TableViewVC.swift in Sources */,
 				73033E421E59FF65003B9FDD /* TableViewWithMultipleVC.xcdatamodeld in Sources */,
 				73033E3C1E59FF65003B9FDD /* ViewController.swift in Sources */,
+				73DC61AB1E5C593500BBC6D5 /* B_ViewController.swift in Sources */,
 				73033E6D1E5A289F003B9FDD /* A_ViewController.swift in Sources */,
 				73033E3A1E59FF65003B9FDD /* AppDelegate.swift in Sources */,
 			);
@@ -526,6 +530,7 @@
 				73033E631E59FF65003B9FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73033E641E59FF65003B9FDD /* Build configuration list for PBXNativeTarget "TableViewWithMultipleVCTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				73033E661E59FF65003B9FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73033E671E59FF65003B9FDD /* Build configuration list for PBXNativeTarget "TableViewWithMultipleVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				73033E691E59FF65003B9FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

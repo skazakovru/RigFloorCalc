@@ -250,7 +250,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
         <!--View Controller-->
         <scene sceneID="NPc-y5-HAU">
             <objects>
-                <viewController storyboardIdentifier="B" id="OG9-eH-CxA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="OG9-eH-CxA" customClass="B_ViewController" customModule="TableViewWithMultipleVC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Bl-55-rLx"/>
                         <viewControllerLayoutGuide type="bottom" id="5g1-qE-Iv8"/>
@@ -258,16 +258,115 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                     <view key="view" contentMode="scaleToFill" id="uRC-qx-sKd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pit Gain From Slug, bbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-1h-eLh">
+                                <rect key="frame" x="61" y="25" width="253" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug Wight, ppg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCj-UV-Msd">
+                                <rect key="frame" x="21" y="156" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mud Weight, ppg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgF-hk-3xb">
+                                <rect key="frame" x="21" y="217" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-Ye-9gu">
+                                <rect key="frame" x="254" y="91" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Rn2-Fb-EIt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owQ-mt-F4T">
+                                <rect key="frame" x="254" y="152" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5h5-VR-3Rh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-WE-IU0">
+                                <rect key="frame" x="254" y="213" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zql-Hc-hbo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au0-6a-6X5">
+                                <rect key="frame" x="21" y="279" width="333" height="44"/>
+                                <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="OG9-eH-CxA" eventType="touchUpInside" id="cCg-Xz-lQD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSQ-t5-6ZG">
+                                <rect key="frame" x="116" y="353" width="143" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug Volume, bbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCB-Kh-iOv">
+                                <rect key="frame" x="21" y="95" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Usv-WE-IU0" firstAttribute="top" secondItem="owQ-mt-F4T" secondAttribute="bottom" constant="31" id="0il-FN-xsd"/>
+                            <constraint firstItem="uGK-1h-eLh" firstAttribute="top" secondItem="6Bl-55-rLx" secondAttribute="bottom" constant="5" id="4q9-cu-P3b"/>
+                            <constraint firstItem="dgF-hk-3xb" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="5CY-0T-RLq"/>
+                            <constraint firstItem="au0-6a-6X5" firstAttribute="top" secondItem="Usv-WE-IU0" secondAttribute="bottom" constant="36" id="5KO-Ew-8gW"/>
+                            <constraint firstItem="ZSQ-t5-6ZG" firstAttribute="top" secondItem="au0-6a-6X5" secondAttribute="bottom" constant="30" id="6yJ-7h-sre"/>
+                            <constraint firstItem="ZSQ-t5-6ZG" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="100" id="96x-J2-De2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Usv-WE-IU0" secondAttribute="trailing" constant="5" id="9dY-yD-MYa"/>
+                            <constraint firstItem="uGK-1h-eLh" firstAttribute="centerX" secondItem="uRC-qx-sKd" secondAttribute="centerX" id="EE1-3T-hDl"/>
+                            <constraint firstItem="aFz-Ye-9gu" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="36" id="JG4-5H-VEE"/>
+                            <constraint firstItem="dgF-hk-3xb" firstAttribute="top" secondItem="fCj-UV-Msd" secondAttribute="bottom" constant="40" id="KcR-6Y-fIG"/>
+                            <constraint firstItem="fCj-UV-Msd" firstAttribute="top" secondItem="sCB-Kh-iOv" secondAttribute="bottom" constant="40" id="L9T-EG-Mtl"/>
+                            <constraint firstItem="sCB-Kh-iOv" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="40" id="PRG-P1-sM8"/>
+                            <constraint firstItem="fCj-UV-Msd" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="QG4-fd-FsH"/>
+                            <constraint firstItem="sCB-Kh-iOv" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="QKj-lA-p7j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="owQ-mt-F4T" secondAttribute="trailing" constant="5" id="bgV-LQ-f99"/>
+                            <constraint firstItem="au0-6a-6X5" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="hSV-0E-nHw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aFz-Ye-9gu" secondAttribute="trailing" constant="5" id="m09-j4-GSR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="au0-6a-6X5" secondAttribute="trailing" constant="5" id="sHZ-tK-fNf"/>
+                            <constraint firstItem="owQ-mt-F4T" firstAttribute="top" secondItem="aFz-Ye-9gu" secondAttribute="bottom" constant="31" id="uhL-lw-cSc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSQ-t5-6ZG" secondAttribute="trailing" constant="100" id="wf6-50-Ni9"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem id="OHZ-L6-8WL"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mudWeightTextField" destination="Usv-WE-IU0" id="5zf-Hy-afb"/>
+                        <outlet property="outputTextField" destination="ZSQ-t5-6ZG" id="2Vb-WI-WsY"/>
+                        <outlet property="slWeightTextField" destination="owQ-mt-F4T" id="bF1-QO-Z4b"/>
+                        <outlet property="slugVolumeTextField" destination="aFz-Ye-9gu" id="zqg-rL-Rmi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiZ-lM-Ngg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="-260"/>
+            <point key="canvasLocation" x="881" y="-644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7OW-cN-BQC">
@@ -280,12 +379,12 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                     <view key="view" contentMode="scaleToFill" id="AYm-sr-f9y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQN-Nd-zI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="-591"/>
+            <point key="canvasLocation" x="1596" y="-304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c0C-W1-jMv">
