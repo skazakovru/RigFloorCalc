@@ -35,9 +35,10 @@ class B_ViewController: UIViewController {
     
     if firstValue != nil && secondValue != nil && thirdValue != nil {
     
-    let outputValue = Double(firstValue!+(secondValue!-thirdValue!)/thirdValue!)
+    let outputValue = Double(firstValue!*(secondValue!-thirdValue!)/thirdValue!)
     
-    outputTextField.text = String(format:"%.1f", outputValue)
+    outputTextField.text = String(format:"%.2f", outputValue)
 }
 }
+    
 }

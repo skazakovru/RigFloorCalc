@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XJv-p2-9fm">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -31,15 +31,15 @@
             <objects>
                 <tableViewController id="LEd-xT-u14" customClass="TableViewController" customModule="TableViewWithMultipleVC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="D7w-ow-Ene">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="STK-jH-Sgb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STK-jH-Sgb" id="F5p-u3-uWm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -64,71 +64,74 @@
                         <viewControllerLayoutGuide type="bottom" id="0tE-sJ-JDV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dju-Vt-Xj0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kill Weight Mud, ppg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nz0-gg-EkD">
-                                <rect key="frame" x="73" y="25" width="230.5" height="30"/>
+                                <rect key="frame" x="45" y="25" width="231" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMW, ppg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdZ-0h-SLt">
-                                <rect key="frame" x="21" y="80" width="139" height="20"/>
+                                <rect key="frame" x="21" y="80" width="111.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="DoS-bQ-OSV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIDPP, psi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-J9-NAk">
-                                <rect key="frame" x="210" y="80" width="144" height="20"/>
+                                <rect key="frame" x="182.5" y="80" width="116.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="4Ow-Jy-yE8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fF-eN-aSc">
-                                <rect key="frame" x="19" y="103" width="142.5" height="30"/>
+                                <rect key="frame" x="19" y="103" width="115" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qte-S6-qWS">
-                                <rect key="frame" x="211.5" y="103" width="142.5" height="30"/>
+                                <rect key="frame" x="184" y="103" width="115" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TVD, ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deR-dL-Fw3">
-                                <rect key="frame" x="21" y="153" width="141.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="21" y="153" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TVD, m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zru-ZT-PBZ">
-                                <rect key="frame" x="212.5" y="153" width="141.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="185" y="153" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-jy-Isl">
-                                <rect key="frame" x="19" y="176.5" width="142.5" height="30"/>
+                                <rect key="frame" x="19" y="177" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="pod-mC-vKs"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-eE-hja">
-                                <rect key="frame" x="211.5" y="176.5" width="142.5" height="30"/>
+                                <rect key="frame" x="188" y="177" width="111" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-19-bgc">
-                                <rect key="frame" x="116.5" y="315.5" width="142.5" height="30"/>
+                                <rect key="frame" x="89" y="316" width="143" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142.5" id="L8i-lU-4sa"/>
@@ -138,19 +141,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round up the result if required by Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="OiW-QR-UWg">
-                                <rect key="frame" x="35" y="350.5" width="305" height="20.5"/>
+                                <rect key="frame" x="8" y="351" width="305" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHJ-0t-ri0">
-                                <rect key="frame" x="166" y="185.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="152" y="186" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-Ur-1Dn">
-                                <rect key="frame" x="21" y="246.5" width="333" height="44"/>
+                                <rect key="frame" x="21" y="247" width="278" height="44"/>
                                 <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -162,7 +165,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JMQ-Lq-zKF">
-                                <rect key="frame" x="2" y="536.5" width="371" height="125.5"/>
+                                <rect key="frame" x="2" y="437" width="316" height="126"/>
                                 <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Formulas Plugged In
 
@@ -179,6 +182,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="fXV-Ur-1Dn" firstAttribute="top" secondItem="u2j-jy-Isl" secondAttribute="bottom" constant="40" id="0X5-e2-xGV"/>
                             <constraint firstItem="0fF-eN-aSc" firstAttribute="leading" secondItem="dju-Vt-Xj0" secondAttribute="leadingMargin" constant="3" id="0bo-oi-NTW"/>
                             <constraint firstItem="dHX-J9-NAk" firstAttribute="leading" secondItem="EdZ-0h-SLt" secondAttribute="trailing" constant="50" id="0jn-m2-HbW"/>
                             <constraint firstItem="Qte-S6-qWS" firstAttribute="width" secondItem="0fF-eN-aSc" secondAttribute="width" id="0ys-GE-rfo"/>
@@ -193,13 +197,12 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                             <constraint firstItem="dHX-J9-NAk" firstAttribute="width" secondItem="EdZ-0h-SLt" secondAttribute="width" constant="5" id="EgE-s8-KSl"/>
                             <constraint firstItem="fXV-Ur-1Dn" firstAttribute="top" secondItem="nt8-eE-hja" secondAttribute="bottom" constant="40" id="Eqz-yC-YZs"/>
                             <constraint firstItem="EdZ-0h-SLt" firstAttribute="top" secondItem="nz0-gg-EkD" secondAttribute="bottom" constant="25" id="HXa-Hw-teV"/>
-                            <constraint firstItem="nt8-eE-hja" firstAttribute="leading" secondItem="VHJ-0t-ri0" secondAttribute="trailing" constant="4" id="IVN-4p-OpS"/>
+                            <constraint firstItem="nt8-eE-hja" firstAttribute="leading" secondItem="VHJ-0t-ri0" secondAttribute="trailing" constant="20" id="IVN-4p-OpS"/>
                             <constraint firstItem="zru-ZT-PBZ" firstAttribute="width" secondItem="deR-dL-Fw3" secondAttribute="width" id="Iey-dC-fxN"/>
                             <constraint firstAttribute="trailing" secondItem="JMQ-Lq-zKF" secondAttribute="trailing" constant="2" id="IvO-62-vUC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fXV-Ur-1Dn" secondAttribute="trailing" constant="5" id="Kg3-rK-e2g"/>
                             <constraint firstItem="0fF-eN-aSc" firstAttribute="top" secondItem="EdZ-0h-SLt" secondAttribute="bottom" constant="3" id="LcR-Ug-HUt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nt8-eE-hja" secondAttribute="trailing" constant="5" id="Nnr-iT-TUd"/>
-                            <constraint firstItem="VHJ-0t-ri0" firstAttribute="leading" secondItem="u2j-jy-Isl" secondAttribute="trailing" constant="4" id="OLd-8V-PdV"/>
                             <constraint firstItem="nz0-gg-EkD" firstAttribute="centerX" secondItem="dju-Vt-Xj0" secondAttribute="centerX" id="P9s-xp-VZJ"/>
                             <constraint firstItem="fXV-Ur-1Dn" firstAttribute="centerX" secondItem="dju-Vt-Xj0" secondAttribute="centerX" id="Rca-iR-IrG"/>
                             <constraint firstItem="nb6-19-bgc" firstAttribute="top" secondItem="fXV-Ur-1Dn" secondAttribute="bottom" constant="25" id="UcX-RW-6lE"/>
@@ -210,20 +213,17 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                             <constraint firstItem="deR-dL-Fw3" firstAttribute="leading" secondItem="dju-Vt-Xj0" secondAttribute="leadingMargin" constant="5" id="gVd-WK-HUv"/>
                             <constraint firstItem="nt8-eE-hja" firstAttribute="top" secondItem="zru-ZT-PBZ" secondAttribute="bottom" constant="3" id="hIK-t3-S5G"/>
                             <constraint firstItem="fXV-Ur-1Dn" firstAttribute="top" secondItem="VHJ-0t-ri0" secondAttribute="bottom" constant="40.5" id="hzn-m0-Irj"/>
-                            <constraint firstItem="nt8-eE-hja" firstAttribute="leading" secondItem="u2j-jy-Isl" secondAttribute="trailing" constant="50" id="jWd-Il-xRd"/>
                             <constraint firstItem="OiW-QR-UWg" firstAttribute="top" secondItem="nb6-19-bgc" secondAttribute="bottom" constant="5" id="kBF-gE-kyk"/>
-                            <constraint firstItem="nt8-eE-hja" firstAttribute="height" secondItem="u2j-jy-Isl" secondAttribute="height" id="kQp-bX-hOu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zru-ZT-PBZ" secondAttribute="trailing" constant="5" id="mYi-SX-nie"/>
-                            <constraint firstItem="u2j-jy-Isl" firstAttribute="top" secondItem="deR-dL-Fw3" secondAttribute="bottom" constant="3" id="oxQ-Ls-fHd"/>
                             <constraint firstItem="zru-ZT-PBZ" firstAttribute="leading" secondItem="deR-dL-Fw3" secondAttribute="trailing" constant="50" id="pu0-4Q-OU3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qte-S6-qWS" secondAttribute="trailing" constant="5" id="rA9-En-QLo"/>
+                            <constraint firstItem="u2j-jy-Isl" firstAttribute="leading" secondItem="dju-Vt-Xj0" secondAttribute="leadingMargin" constant="3" id="rAT-mE-ajN"/>
                             <constraint firstItem="Qte-S6-qWS" firstAttribute="leading" secondItem="0fF-eN-aSc" secondAttribute="trailing" constant="50" id="sNt-xI-edC"/>
                             <constraint firstItem="zru-ZT-PBZ" firstAttribute="top" secondItem="Qte-S6-qWS" secondAttribute="bottom" constant="20" id="tG2-94-22R"/>
                             <constraint firstItem="nb6-19-bgc" firstAttribute="centerX" secondItem="dju-Vt-Xj0" secondAttribute="centerX" id="usT-ha-xr1"/>
-                            <constraint firstItem="u2j-jy-Isl" firstAttribute="leading" secondItem="dju-Vt-Xj0" secondAttribute="leadingMargin" constant="3" id="vRC-mV-FDP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dHX-J9-NAk" secondAttribute="trailing" constant="5" id="vkE-2d-yhz"/>
                             <constraint firstItem="nz0-gg-EkD" firstAttribute="top" secondItem="3IT-bx-mdX" secondAttribute="bottom" constant="5" id="w38-BK-gZW"/>
-                            <constraint firstItem="nt8-eE-hja" firstAttribute="width" secondItem="u2j-jy-Isl" secondAttribute="width" id="wi4-v1-M8d"/>
+                            <constraint firstItem="u2j-jy-Isl" firstAttribute="top" secondItem="deR-dL-Fw3" secondAttribute="bottom" constant="3" id="ys6-WT-Vrg"/>
                             <constraint firstItem="deR-dL-Fw3" firstAttribute="top" secondItem="0fF-eN-aSc" secondAttribute="bottom" constant="20" id="zat-jO-tE2"/>
                         </constraints>
                         <connections>
@@ -245,7 +245,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="672.79999999999995" y="-549.17541229385313"/>
+            <point key="canvasLocation" x="388" y="-661"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NPc-y5-HAU">
@@ -256,29 +256,29 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="5g1-qE-Iv8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uRC-qx-sKd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pit Gain From Slug, bbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-1h-eLh">
-                                <rect key="frame" x="61" y="25" width="253" height="30"/>
+                                <rect key="frame" x="33.5" y="25" width="253" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug Wight, ppg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCj-UV-Msd">
-                                <rect key="frame" x="21" y="156" width="123" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug Weight, ppg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCj-UV-Msd">
+                                <rect key="frame" x="21" y="146" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mud Weight, ppg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgF-hk-3xb">
-                                <rect key="frame" x="21" y="217" width="132" height="21"/>
+                                <rect key="frame" x="21" y="202" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-Ye-9gu">
-                                <rect key="frame" x="254" y="91" width="100" height="30"/>
+                                <rect key="frame" x="199" y="85" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Rn2-Fb-EIt"/>
                                 </constraints>
@@ -287,7 +287,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owQ-mt-F4T">
-                                <rect key="frame" x="254" y="152" width="100" height="30"/>
+                                <rect key="frame" x="199" y="141" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5h5-VR-3Rh"/>
                                 </constraints>
@@ -296,7 +296,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-WE-IU0">
-                                <rect key="frame" x="254" y="213" width="100" height="30"/>
+                                <rect key="frame" x="199" y="197" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="zql-Hc-hbo"/>
                                 </constraints>
@@ -305,7 +305,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au0-6a-6X5">
-                                <rect key="frame" x="21" y="279" width="333" height="44"/>
+                                <rect key="frame" x="21" y="257" width="278" height="44"/>
                                 <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="Calculate">
@@ -316,41 +316,52 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSQ-t5-6ZG">
-                                <rect key="frame" x="116" y="353" width="143" height="30"/>
+                                <rect key="frame" x="200" y="327" width="100" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8SW-nV-0UX"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug Volume, bbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCB-Kh-iOv">
-                                <rect key="frame" x="21" y="95" width="129" height="21"/>
+                                <rect key="frame" x="21" y="90" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pit Gain, bbl:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJn-mL-xim">
+                                <rect key="frame" x="21" y="331" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Usv-WE-IU0" firstAttribute="top" secondItem="owQ-mt-F4T" secondAttribute="bottom" constant="31" id="0il-FN-xsd"/>
+                            <constraint firstItem="Usv-WE-IU0" firstAttribute="top" secondItem="owQ-mt-F4T" secondAttribute="bottom" constant="26" id="0il-FN-xsd"/>
+                            <constraint firstItem="ZSQ-t5-6ZG" firstAttribute="top" secondItem="au0-6a-6X5" secondAttribute="bottom" constant="26" id="1ca-A2-A9T"/>
                             <constraint firstItem="uGK-1h-eLh" firstAttribute="top" secondItem="6Bl-55-rLx" secondAttribute="bottom" constant="5" id="4q9-cu-P3b"/>
                             <constraint firstItem="dgF-hk-3xb" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="5CY-0T-RLq"/>
-                            <constraint firstItem="au0-6a-6X5" firstAttribute="top" secondItem="Usv-WE-IU0" secondAttribute="bottom" constant="36" id="5KO-Ew-8gW"/>
-                            <constraint firstItem="ZSQ-t5-6ZG" firstAttribute="top" secondItem="au0-6a-6X5" secondAttribute="bottom" constant="30" id="6yJ-7h-sre"/>
-                            <constraint firstItem="ZSQ-t5-6ZG" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="100" id="96x-J2-De2"/>
+                            <constraint firstItem="au0-6a-6X5" firstAttribute="top" secondItem="Usv-WE-IU0" secondAttribute="bottom" constant="30" id="5KO-Ew-8gW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Usv-WE-IU0" secondAttribute="trailing" constant="5" id="9dY-yD-MYa"/>
                             <constraint firstItem="uGK-1h-eLh" firstAttribute="centerX" secondItem="uRC-qx-sKd" secondAttribute="centerX" id="EE1-3T-hDl"/>
-                            <constraint firstItem="aFz-Ye-9gu" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="36" id="JG4-5H-VEE"/>
-                            <constraint firstItem="dgF-hk-3xb" firstAttribute="top" secondItem="fCj-UV-Msd" secondAttribute="bottom" constant="40" id="KcR-6Y-fIG"/>
-                            <constraint firstItem="fCj-UV-Msd" firstAttribute="top" secondItem="sCB-Kh-iOv" secondAttribute="bottom" constant="40" id="L9T-EG-Mtl"/>
-                            <constraint firstItem="sCB-Kh-iOv" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="40" id="PRG-P1-sM8"/>
+                            <constraint firstItem="aFz-Ye-9gu" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="30" id="JG4-5H-VEE"/>
+                            <constraint firstItem="dgF-hk-3xb" firstAttribute="top" secondItem="fCj-UV-Msd" secondAttribute="bottom" constant="35" id="KcR-6Y-fIG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSQ-t5-6ZG" secondAttribute="trailing" constant="20" id="L58-gB-IhF"/>
+                            <constraint firstItem="fCj-UV-Msd" firstAttribute="top" secondItem="sCB-Kh-iOv" secondAttribute="bottom" constant="35" id="L9T-EG-Mtl"/>
+                            <constraint firstItem="sCB-Kh-iOv" firstAttribute="top" secondItem="uGK-1h-eLh" secondAttribute="bottom" constant="35" id="PRG-P1-sM8"/>
+                            <constraint firstItem="DJn-mL-xim" firstAttribute="top" secondItem="au0-6a-6X5" secondAttribute="bottom" constant="30" id="Pad-mh-1mN"/>
                             <constraint firstItem="fCj-UV-Msd" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="QG4-fd-FsH"/>
                             <constraint firstItem="sCB-Kh-iOv" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="QKj-lA-p7j"/>
+                            <constraint firstItem="DJn-mL-xim" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="Ugg-Dr-InT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="owQ-mt-F4T" secondAttribute="trailing" constant="5" id="bgV-LQ-f99"/>
                             <constraint firstItem="au0-6a-6X5" firstAttribute="leading" secondItem="uRC-qx-sKd" secondAttribute="leadingMargin" constant="5" id="hSV-0E-nHw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aFz-Ye-9gu" secondAttribute="trailing" constant="5" id="m09-j4-GSR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="au0-6a-6X5" secondAttribute="trailing" constant="5" id="sHZ-tK-fNf"/>
-                            <constraint firstItem="owQ-mt-F4T" firstAttribute="top" secondItem="aFz-Ye-9gu" secondAttribute="bottom" constant="31" id="uhL-lw-cSc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZSQ-t5-6ZG" secondAttribute="trailing" constant="100" id="wf6-50-Ni9"/>
+                            <constraint firstItem="owQ-mt-F4T" firstAttribute="top" secondItem="aFz-Ye-9gu" secondAttribute="bottom" constant="26" id="uhL-lw-cSc"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -365,8 +376,9 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiZ-lM-Ngg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Ge-Ji-huk"/>
             </objects>
-            <point key="canvasLocation" x="881" y="-644"/>
+            <point key="canvasLocation" x="833" y="-681"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7OW-cN-BQC">
@@ -377,7 +389,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="z06-R4-I22"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AYm-sr-f9y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -395,7 +407,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="dJj-lR-fxR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="clw-E8-KeM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -413,7 +425,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="wr3-Jr-7Xd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oWp-8t-dtl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -431,7 +443,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="ZVW-SI-8SX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jr4-aB-5rt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -449,7 +461,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="8ag-Vz-HpO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YPR-oH-Uzo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -467,7 +479,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="bko-u4-R54"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mjA-xl-b7k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -485,7 +497,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="Vmx-0m-apJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="caE-1J-6Tg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -503,7 +515,7 @@ KWM = SIDPP*19.23/(TVD*3.281) + OMW</string>
                         <viewControllerLayoutGuide type="bottom" id="VNI-KK-y6X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OnV-Ul-rw2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0Z-pg-o9I">
