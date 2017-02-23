@@ -15,7 +15,7 @@ class TableViewController: UITableViewController {
     var identities = [String]()
     
     override func viewDidLoad() {
-        names = ["First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eights", "Nineth", "Tenth"]
+        names = ["Kill Weight Mud","Pit Gain From Slug","Third","Fourth","Fifth","Sixth","Seventh","Eights", "Nineth", "Tenth"]
         identities = ["A","B","C","D","E","F","G","H","I","J"]
     }
     

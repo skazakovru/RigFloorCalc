@@ -26,7 +26,8 @@ class B_ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func calculateTapped(_ sender: Any) {
+    
+    @IBAction func calculateTappws(_ sender: Any) {
     
     let firstValue = Double(slugVolumeTextField.text!)
     let secondValue = Double(slWeightTextField.text!)
@@ -40,5 +41,7 @@ class B_ViewController: UIViewController {
     outputTextField.text = String(format:"%.2f", outputValue)
 }
 }
-    
+
+    @IBAction func removeKeyboard(_ sender: Any) { view.endEditing(true)
+    }
 }
