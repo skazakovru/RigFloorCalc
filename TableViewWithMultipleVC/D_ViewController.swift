@@ -10,6 +10,12 @@ import UIKit
 
 class D_ViewController: UIViewController {
 
+    @IBOutlet weak var pipeIDTextField: UITextField!
+    @IBOutlet weak var pipeODTextField: UITextField!
+    @IBOutlet weak var feetStandLengthTextField: UITextField!
+    @IBOutlet weak var openEndBblStdTextField: UITextField!
+    @IBOutlet weak var closeEndBblStdTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +27,23 @@ class D_ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func calculateTappedButton(_ sender: Any) {
+        let firstValue = Double (pipeIDTextField.text!)
+        let secondValue = Double (pipeODTextField.text!)
+        let thirdValue = Double (feetStandLengthTextField.text!)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+      if firstValue != nil && secondValue != nil && thirdValue != nil {
+            
+            let calculatedValue1 = Double (secondValue! * 0.0003638 * thirdValue!)
+        
+            let calculatedValue2 = Double ((firstValue! * firstValue! * 0.0009714 * thirdValue!) + calculatedValue1)
+        
+            openEndBblStdTextField.text = String (format: "%.2f", calculatedValue1)
+            closeEndBblStdTextField.text = String (format: "%.2f", calculatedValue2)
+            
+        }
+        
     }
-    */
 
 }

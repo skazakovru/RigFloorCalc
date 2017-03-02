@@ -667,13 +667,13 @@ DL (meters) = DL (ft)/ 3.281</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="gE8-05-uNf">
-                                <rect key="frame" x="16" y="75" width="288" height="317"/>
+                                <rect key="frame" x="16" y="75" width="288" height="277"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="qpV-0W-oLV">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VZi-5V-KoV">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="110"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipe ID, in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac2-7U-LSF">
                                                         <rect key="frame" x="0.0" y="0.0" width="165" height="20.5"/>
@@ -681,20 +681,14 @@ DL (meters) = DL (ft)/ 3.281</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipe OD, in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xd-UE-PZL">
-                                                        <rect key="frame" x="0.0" y="43" width="165" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight w/TJ, lb/ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xd-UE-PZL">
+                                                        <rect key="frame" x="0.0" y="45" width="165" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stand Length, ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-ZX-b0T">
-                                                        <rect key="frame" x="0.0" y="86.5" width="165" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stand Length, meters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td7-LI-cjd">
-                                                        <rect key="frame" x="0.0" y="129.5" width="165" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joint Length, ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-ZX-b0T">
+                                                        <rect key="frame" x="0.0" y="89.5" width="165" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -705,7 +699,7 @@ DL (meters) = DL (ft)/ 3.281</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zyQ-sG-EO1">
-                                                <rect key="frame" x="178" y="0.0" width="110" height="150"/>
+                                                <rect key="frame" x="178" y="0.0" width="110" height="110"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-BL-5OH">
                                                         <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
@@ -725,12 +719,6 @@ DL (meters) = DL (ft)/ 3.281</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DdY-Zo-r3k">
-                                                        <rect key="frame" x="0.0" y="120" width="110" height="30"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="5pt-zY-VY2"/>
@@ -739,27 +727,30 @@ DL (meters) = DL (ft)/ 3.281</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebF-ws-2UH">
-                                        <rect key="frame" x="0.0" y="176" width="288" height="45"/>
+                                        <rect key="frame" x="0.0" y="136" width="288" height="45"/>
                                         <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calculateTappedButton:" destination="aBx-Hd-dWC" eventType="touchUpInside" id="RRe-rE-PBj"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-JH-qnl">
-                                        <rect key="frame" x="0.0" y="247" width="288" height="70"/>
+                                        <rect key="frame" x="0.0" y="207" width="288" height="70"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bt3-L6-DJj">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open End, bbl/std" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx2-9e-UfV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open End, bbl/jnt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx2-9e-UfV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close End, bbl/std" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-8X-qvN">
-                                                        <rect key="frame" x="0.0" y="49.5" width="140" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close End, bbl/jnt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-8X-qvN">
+                                                        <rect key="frame" x="0.0" y="49.5" width="135" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -826,6 +817,13 @@ DL (meters) = DL (ft)/ 3.281</string>
                             <constraint firstItem="12K-vn-1Vf" firstAttribute="trailing" secondItem="oWp-8t-dtl" secondAttribute="trailingMargin" id="wGw-Dc-Vkm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeEndBblStdTextField" destination="fRd-hF-yv5" id="Oev-cn-pLr"/>
+                        <outlet property="feetStandLengthTextField" destination="7iM-i7-YxM" id="q8D-fU-eFM"/>
+                        <outlet property="openEndBblStdTextField" destination="1hi-e3-tUp" id="f74-07-tsW"/>
+                        <outlet property="pipeIDTextField" destination="1o9-BL-5OH" id="OMX-cF-XMS"/>
+                        <outlet property="pipeODTextField" destination="HZd-N4-5Fy" id="pIF-YQ-GEv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D59-fZ-4Lr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
