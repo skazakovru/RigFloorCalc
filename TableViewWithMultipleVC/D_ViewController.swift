@@ -35,15 +35,21 @@ class D_ViewController: UIViewController {
         
       if firstValue != nil && secondValue != nil && thirdValue != nil {
             
-            let calculatedValue1 = Double (secondValue! * 0.0003638 * thirdValue!)
+            let calculatedValue1 = secondValue! * 0.0003638 * thirdValue!
         
-            let calculatedValue2 = Double ((firstValue! * firstValue! * 0.0009714 * thirdValue!) + calculatedValue1)
+            let calculatedValue2 = firstValue! * firstValue! * 0.0009714 * thirdValue! + calculatedValue1
         
-            openEndBblStdTextField.text = String (format: "%.2f", calculatedValue1)
-            closeEndBblStdTextField.text = String (format: "%.2f", calculatedValue2)
+            openEndBblStdTextField.text = String (format: "%.3f", calculatedValue1)
+            closeEndBblStdTextField.text = String (format: "%.3f", calculatedValue2)
             
         }
         
     }
 
-}
+    @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)
+    }
+
+    }
+
+
+
