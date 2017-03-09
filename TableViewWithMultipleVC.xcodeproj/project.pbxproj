@@ -18,6 +18,7 @@
 		73033E6B1E5A0025003B9FDD /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73033E6A1E5A0025003B9FDD /* TableViewVC.swift */; };
 		73033E6D1E5A289F003B9FDD /* A_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73033E6C1E5A289F003B9FDD /* A_ViewController.swift */; };
 		732C3B111E64BD5800CEB4E8 /* D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732C3B101E64BD5800CEB4E8 /* D_ViewController.swift */; };
+		7363E88A1E6DB8D10026A34C /* E_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363E8891E6DB8D10026A34C /* E_ViewController.swift */; };
 		7393418A1E60544C0061DBFC /* C_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739341891E60544C0061DBFC /* C_ViewController.swift */; };
 		73DC61AB1E5C593500BBC6D5 /* B_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		73033E6A1E5A0025003B9FDD /* TableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		73033E6C1E5A289F003B9FDD /* A_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_ViewController.swift; sourceTree = "<group>"; };
 		732C3B101E64BD5800CEB4E8 /* D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ViewController.swift; sourceTree = "<group>"; };
+		7363E8891E6DB8D10026A34C /* E_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E_ViewController.swift; sourceTree = "<group>"; };
 		739341891E60544C0061DBFC /* C_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C_ViewController.swift; sourceTree = "<group>"; };
 		73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				73DC61AA1E5C593500BBC6D5 /* B_ViewController.swift */,
 				739341891E60544C0061DBFC /* C_ViewController.swift */,
 				732C3B101E64BD5800CEB4E8 /* D_ViewController.swift */,
+				7363E8891E6DB8D10026A34C /* E_ViewController.swift */,
 				73033E3D1E59FF65003B9FDD /* Main.storyboard */,
 				73033E431E59FF65003B9FDD /* Assets.xcassets */,
 				73033E451E59FF65003B9FDD /* LaunchScreen.storyboard */,
@@ -285,6 +288,7 @@
 				73033E3C1E59FF65003B9FDD /* ViewController.swift in Sources */,
 				732C3B111E64BD5800CEB4E8 /* D_ViewController.swift in Sources */,
 				73DC61AB1E5C593500BBC6D5 /* B_ViewController.swift in Sources */,
+				7363E88A1E6DB8D10026A34C /* E_ViewController.swift in Sources */,
 				7393418A1E60544C0061DBFC /* C_ViewController.swift in Sources */,
 				73033E6D1E5A289F003B9FDD /* A_ViewController.swift in Sources */,
 				73033E3A1E59FF65003B9FDD /* AppDelegate.swift in Sources */,
@@ -445,6 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rigdog.TableViewWithMultipleVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -458,6 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rigdog.TableViewWithMultipleVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

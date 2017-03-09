@@ -29,10 +29,16 @@ class C_ViewController: UIViewController {
     
 
     @IBAction func calculateTappedButton(_ sender: Any) {
-        let firstValue = Double(drillPipeID.text!)
-        let secondValue = Double(slugVolume.text!)
-        let thirdValue = Double(slugWeight.text!)
-        let fourthValue = Double(mudWeight.text!)
+        var firstValue = Double(drillPipeID.text!)
+        var secondValue = Double(slugVolume.text!)
+        var thirdValue = Double(slugWeight.text!)
+        var fourthValue = Double(mudWeight.text!)
+        
+        let numberFormatter = NumberFormatter()
+        firstValue = Double(numberFormatter.number(from: drillPipeID.text!)!)
+        secondValue = Double(numberFormatter.number(from: slugVolume.text!)!)
+        thirdValue = Double(numberFormatter.number(from: slugWeight.text!)!)
+        fourthValue = Double(numberFormatter.number(from: mudWeight.text!)!)
         
         if firstValue != nil && secondValue != nil && thirdValue != nil && fourthValue != nil {
             

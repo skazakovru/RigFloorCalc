@@ -29,9 +29,14 @@ class B_ViewController: UIViewController {
     
     @IBAction func calculateTappws(_ sender: Any) {
     
-    let firstValue = Double(slugVolumeTextField.text!)
-    let secondValue = Double(slWeightTextField.text!)
-    let thirdValue = Double(mudWeightTextField.text!)
+    var firstValue = Double(slugVolumeTextField.text!)
+    var secondValue = Double(slWeightTextField.text!)
+    var thirdValue = Double(mudWeightTextField.text!)
+        
+        let numberFormatter = NumberFormatter()
+        firstValue = Double(numberFormatter.number(from: slugVolumeTextField.text!)!)
+        secondValue = Double(numberFormatter.number(from: slWeightTextField.text!)!)
+        thirdValue = Double(numberFormatter.number(from: mudWeightTextField.text!)!)
   
     
     if firstValue != nil && secondValue != nil && thirdValue != nil {

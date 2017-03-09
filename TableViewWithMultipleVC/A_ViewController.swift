@@ -28,10 +28,14 @@ class A_ViewController: UIViewController {
     }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-        let firstValue = Double(originalMWTextField.text!)
+        var firstValue = Double(originalMWTextField.text!)
         let secondValue = Double(shutIDPPtextField.text!)
         let thirdValue = Double(trueVDtextField.text!)
         let fourthValue = Double(metersTVDtextField.text!)
+        
+        let numberFormatter = NumberFormatter()
+        firstValue = Double(numberFormatter.number(from: originalMWTextField.text!)!)
+
         
         if firstValue != nil && secondValue != nil && thirdValue != nil {
             

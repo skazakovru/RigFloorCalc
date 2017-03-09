@@ -28,9 +28,14 @@ class D_ViewController: UIViewController {
     }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-        let firstValue = Double (pipeIDTextField.text!)
-        let secondValue = Double (pipeODTextField.text!)
-        let thirdValue = Double (feetStandLengthTextField.text!)
+        var firstValue = Double (pipeIDTextField.text!)
+        var secondValue = Double (pipeODTextField.text!)
+        var thirdValue = Double (feetStandLengthTextField.text!)
+        
+        let numberFormatter = NumberFormatter()
+        firstValue = Double(numberFormatter.number(from: pipeIDTextField.text!)!)
+        secondValue = Double(numberFormatter.number(from: pipeODTextField.text!)!)
+        thirdValue = Double(numberFormatter.number(from: feetStandLengthTextField.text!)!)
 
         
       if firstValue != nil && secondValue != nil && thirdValue != nil {
