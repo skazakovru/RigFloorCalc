@@ -20,9 +20,8 @@ class E_ViewController: UIViewController {
     @IBOutlet weak var strokesPerMin: UITextField!
     
     @IBOutlet weak var outputDuplex: UITextField!
-    @IBOutlet weak var pumpRateDuplex: UITextField!
     @IBOutlet weak var OutputTriplex: UITextField!
-    @IBOutlet weak var pumpRateTrriplex: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,6 @@ class E_ViewController: UIViewController {
         let fourthValue = Double (triplexLinerID.text!)
         let fifthValue = Double (triplexStrokeLength.text!)
         let sixValue = Double (triplexEff.text!)
-        let seventhValue = Double (strokesPerMin.text!)
         let eightValue = Double (duplexRodOD.text!)
         
         if firstValue != nil && secondValue != nil && thirdValue != nil &&  eightValue != nil {

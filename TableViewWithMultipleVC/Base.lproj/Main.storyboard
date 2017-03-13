@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STK-jH-Sgb" id="F5p-u3-uWm">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -269,13 +269,13 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RKw-wS-P1l">
-                                <rect key="frame" x="5" y="25" width="310" height="383.5"/>
+                                <rect key="frame" x="5" y="25" width="310" height="309.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SPJ-ZN-zcb">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="383.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="309.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="r0J-Il-w7g">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="383.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="309.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pump Output (bbl/stk)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URX-a5-QBf">
                                                         <rect key="frame" x="22" y="0.0" width="266.5" height="32.5"/>
@@ -333,41 +333,41 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-tJ-ZcB">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-tJ-ZcB">
                                                                                 <rect key="frame" x="0.0" y="22.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="aDk-xv-d8X"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-2I-Web">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-2I-Web">
                                                                                 <rect key="frame" x="0.0" y="54.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="e6T-jr-4r6"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-8c-ehd">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-8c-ehd">
                                                                                 <rect key="frame" x="0.0" y="86.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="HYC-rc-Zda"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7R-tG-CeE">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7R-tG-CeE">
                                                                                 <rect key="frame" x="0.0" y="118.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="c3Y-q2-sqQ"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -380,32 +380,32 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-h1-la4">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-h1-la4">
                                                                                 <rect key="frame" x="0.0" y="22.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="sSX-lb-z1k"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-Gi-r5d">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-Gi-r5d">
                                                                                 <rect key="frame" x="0.0" y="54.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="yyV-Nm-dtu"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXg-fE-Gkt">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXg-fE-Gkt">
                                                                                 <rect key="frame" x="0.0" y="86.5" width="100" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="100" id="r08-rB-Dyv"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -413,28 +413,8 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-8F-t2F">
-                                                        <rect key="frame" x="95" y="203" width="120.5" height="30"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-fg-ryR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-rQ-Kvt">
-                                                                <rect key="frame" x="45.5" y="0.0" width="75" height="30"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="75" id="SX0-9y-GFH"/>
-                                                                </constraints>
-                                                                <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVw-VE-Mda">
-                                                        <rect key="frame" x="10" y="244" width="290" height="42"/>
+                                                        <rect key="frame" x="10" y="203" width="290" height="42"/>
                                                         <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <state key="normal" title="Calculate">
@@ -445,19 +425,13 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4YZ-Sp-q2A">
-                                                        <rect key="frame" x="7" y="297" width="296.5" height="86.5"/>
+                                                        <rect key="frame" x="17" y="256" width="276" height="53.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fpp-MM-dIN">
-                                                                <rect key="frame" x="0.0" y="35.5" width="142.5" height="51"/>
+                                                                <rect key="frame" x="0.0" y="33" width="122" height="20.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output (bbl/stk)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2i-O1-sJa">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="20.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pump Rates (bpm)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7X-Wm-mQ8">
-                                                                        <rect key="frame" x="0.0" y="30.5" width="142.5" height="20.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="122" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -465,7 +439,7 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Jjc-cP-Vcd">
-                                                                <rect key="frame" x="144.5" y="0.0" width="75" height="86.5"/>
+                                                                <rect key="frame" x="124" y="0.0" width="75" height="53.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duplex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMo-dd-4qh">
                                                                         <rect key="frame" x="9" y="0.0" width="57" height="20.5"/>
@@ -473,28 +447,20 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vz-Hi-Nr0">
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vz-Hi-Nr0">
                                                                         <rect key="frame" x="0.0" y="23.5" width="75" height="30"/>
+                                                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="75" id="zUO-JH-4HC"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
-                                                                    </textField>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozg-9k-vLM">
-                                                                        <rect key="frame" x="0.0" y="56.5" width="75" height="30"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="75" id="qTr-Et-BqS"/>
-                                                                        </constraints>
-                                                                        <nil key="textColor"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cIc-2l-AGr">
-                                                                <rect key="frame" x="221.5" y="2" width="75" height="84.5"/>
+                                                                <rect key="frame" x="201" y="1" width="75" height="52.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triplex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ral-H9-k53">
                                                                         <rect key="frame" x="9.5" y="0.0" width="56" height="20.5"/>
@@ -502,22 +468,14 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-RU-1YS">
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-RU-1YS">
                                                                         <rect key="frame" x="0.0" y="22.5" width="75" height="30"/>
+                                                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="75" id="h6U-DA-ykT"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
-                                                                    </textField>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-me-Uba">
-                                                                        <rect key="frame" x="0.0" y="54.5" width="75" height="30"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="75" id="DG6-fN-Txn"/>
-                                                                        </constraints>
-                                                                        <nil key="textColor"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                 </subviews>
@@ -535,7 +493,7 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-km-scW">
-                                <rect key="frame" x="16" y="418.5" width="288" height="129.5"/>
+                                <rect key="frame" x="16" y="364.5" width="288" height="183.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -544,7 +502,7 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                         </subviews>
                         <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nGl-km-scW" firstAttribute="top" secondItem="RKw-wS-P1l" secondAttribute="bottom" constant="10" id="2GT-xF-OPw"/>
+                            <constraint firstItem="nGl-km-scW" firstAttribute="top" secondItem="RKw-wS-P1l" secondAttribute="bottom" constant="30" id="2GT-xF-OPw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nGl-km-scW" secondAttribute="trailing" id="B6P-Vw-xz8"/>
                             <constraint firstItem="nGl-km-scW" firstAttribute="leading" secondItem="tgn-Ut-gZe" secondAttribute="leadingMargin" id="C1e-Ka-zPW"/>
                             <constraint firstItem="RKw-wS-P1l" firstAttribute="leading" secondItem="tgn-Ut-gZe" secondAttribute="leading" constant="5" id="CPR-f8-wlo"/>
@@ -560,9 +518,6 @@ KWM = SIDPP x 19.23 / (TVD x 3.281) + OMW</string>
                         <outlet property="duplexRodOD" destination="d7R-tG-CeE" id="wnk-6o-kSu"/>
                         <outlet property="duplexStrokeLength" destination="R7g-2I-Web" id="676-0I-Sap"/>
                         <outlet property="outputDuplex" destination="6vz-Hi-Nr0" id="Gea-hi-sWj"/>
-                        <outlet property="pumpRateDuplex" destination="Ozg-9k-vLM" id="LnW-fR-IzG"/>
-                        <outlet property="pumpRateTrriplex" destination="8dR-me-Uba" id="Zm5-NS-GwW"/>
-                        <outlet property="strokesPerMin" destination="bIh-rQ-Kvt" id="OOk-rg-WNi"/>
                         <outlet property="triplexEff" destination="dXg-fE-Gkt" id="W2t-tq-Pwd"/>
                         <outlet property="triplexLinerID" destination="nxL-h1-la4" id="lKa-UV-Nn4"/>
                         <outlet property="triplexStrokeLength" destination="KAm-Gi-r5d" id="HgC-Ao-pLf"/>
@@ -1158,7 +1113,7 @@ DL (meters) = DL (ft)/ 3.281</string>
         <!--View Controller-->
         <scene sceneID="9Bn-Pc-boF">
             <objects>
-                <viewController storyboardIdentifier="F" id="8Yz-4x-AkY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="F" id="8Yz-4x-AkY" customClass="F_ViewController" customModule="TableViewWithMultipleVC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jBr-UW-xWd"/>
                         <viewControllerLayoutGuide type="bottom" id="ZVW-SI-8SX"/>
@@ -1166,12 +1121,157 @@ DL (meters) = DL (ft)/ 3.281</string>
                     <view key="view" contentMode="scaleToFill" id="Jr4-aB-5rt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mud Compression" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43l-Zv-AZS">
+                                <rect key="frame" x="26" y="30" width="268" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YJH-dF-qgy">
+                                <rect key="frame" x="26" y="82" width="268" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mud Volume (bbl)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0sn-Ld-nst">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pd-4F-XDA">
+                                        <rect key="frame" x="168" y="0.0" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="DvR-gK-cbQ"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="moM-dL-AuT">
+                                <rect key="frame" x="21" y="172" width="288" height="36"/>
+                                <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ryl-QT-miF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="OBM"/>
+                                    <segment title="WBM"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="8Yz-4x-AkY" eventType="valueChanged" id="f8x-05-aC0"/>
+                                    <action selector="mudTypeSelected:" destination="8Yz-4x-AkY" eventType="touchUpInside" id="MHi-Lz-XMA"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="esO-1t-kPe">
+                                <rect key="frame" x="26" y="122" width="268" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure Applied (psi)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-7y-kuq">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykB-W0-zTE">
+                                        <rect key="frame" x="168" y="0.0" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Wyg-Xv-4TV"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-9Q-CFI">
+                                <rect key="frame" x="26" y="227" width="268" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-Eu-GYP">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000045" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUx-D2-ssC">
+                                        <rect key="frame" x="182" y="0.0" width="86" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-pC-1Ev">
+                                <rect key="frame" x="16" y="286" width="288" height="40"/>
+                                <color key="backgroundColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dRd-vU-6pp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="8Yz-4x-AkY" eventType="touchUpInside" id="AWs-pm-M9A"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-nR-EgY">
+                                <rect key="frame" x="26" y="346" width="268" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrels needed to pr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84j-Bx-NdG">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-7C-ddB">
+                                        <rect key="frame" x="168" y="0.0" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="xHY-tl-nyN"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="esO-1t-kPe" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="10" id="1ou-vo-XPx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h9H-9Q-CFI" secondAttribute="trailing" constant="10" id="BPy-5O-rFP"/>
+                            <constraint firstItem="h9H-9Q-CFI" firstAttribute="top" secondItem="moM-dL-AuT" secondAttribute="bottom" constant="20" id="CKF-5q-wAd"/>
+                            <constraint firstItem="moM-dL-AuT" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="5" id="CaV-gX-W9w"/>
+                            <constraint firstItem="moM-dL-AuT" firstAttribute="top" secondItem="esO-1t-kPe" secondAttribute="bottom" constant="20" id="DnP-Kr-u4j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YJH-dF-qgy" secondAttribute="trailing" constant="10" id="I7a-hf-TiV"/>
+                            <constraint firstItem="YJH-dF-qgy" firstAttribute="top" secondItem="43l-Zv-AZS" secondAttribute="bottom" constant="20" id="IBK-g3-uif"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="43l-Zv-AZS" secondAttribute="trailing" constant="10" id="QLZ-on-C8V"/>
+                            <constraint firstItem="wxI-pC-1Ev" firstAttribute="top" secondItem="h9H-9Q-CFI" secondAttribute="bottom" constant="38" id="V7o-UH-0mV"/>
+                            <constraint firstItem="wxI-pC-1Ev" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" id="YVJ-MA-i2H"/>
+                            <constraint firstItem="7nf-nR-EgY" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="10" id="ZP8-e6-h2t"/>
+                            <constraint firstItem="43l-Zv-AZS" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="10" id="Zql-1Z-r9X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7nf-nR-EgY" secondAttribute="trailing" constant="10" id="cBF-Iz-aZk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="esO-1t-kPe" secondAttribute="trailing" constant="10" id="cnh-5h-s3p"/>
+                            <constraint firstItem="wxI-pC-1Ev" firstAttribute="trailing" secondItem="Jr4-aB-5rt" secondAttribute="trailingMargin" id="d7u-4f-h0r"/>
+                            <constraint firstItem="YJH-dF-qgy" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="10" id="dUq-nj-4QX"/>
+                            <constraint firstItem="7nf-nR-EgY" firstAttribute="top" secondItem="wxI-pC-1Ev" secondAttribute="bottom" constant="20" id="ejm-8q-edj"/>
+                            <constraint firstItem="esO-1t-kPe" firstAttribute="top" secondItem="YJH-dF-qgy" secondAttribute="bottom" constant="10" id="hoP-4S-wxr"/>
+                            <constraint firstItem="moM-dL-AuT" firstAttribute="trailing" secondItem="Jr4-aB-5rt" secondAttribute="trailingMargin" constant="5" id="n8d-UO-Xl2"/>
+                            <constraint firstItem="43l-Zv-AZS" firstAttribute="top" secondItem="jBr-UW-xWd" secondAttribute="bottom" constant="10" id="wWv-kn-XJC"/>
+                            <constraint firstItem="h9H-9Q-CFI" firstAttribute="leading" secondItem="Jr4-aB-5rt" secondAttribute="leadingMargin" constant="10" id="yHd-gj-Ueg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mudVolumeTextField" destination="5pd-4F-XDA" id="EI6-aA-NHU"/>
+                        <outlet property="outputValue" destination="DsT-7C-ddB" id="NaU-Hy-jKK"/>
+                        <outlet property="pressureAppliedTextField" destination="ykB-W0-zTE" id="CJY-eX-bvN"/>
+                        <outlet property="resultLable" destination="RUx-D2-ssC" id="tpn-by-nNk"/>
+                        <outlet property="segmentedControl" destination="moM-dL-AuT" id="8cq-kz-yjE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yog-R0-P7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="938"/>
+            <point key="canvasLocation" x="2169.375" y="761.61971830985919"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5vK-U1-Gna">
