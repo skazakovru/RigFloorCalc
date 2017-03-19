@@ -56,5 +56,8 @@ class F_ViewController: UIViewController {
           
         }
     }
+    @IBAction func gestureTapped(_ sender: Any) {
+         view.endEditing(true)
+    }
 }
 

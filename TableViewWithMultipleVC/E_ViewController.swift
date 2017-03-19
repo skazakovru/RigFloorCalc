@@ -17,7 +17,6 @@ class E_ViewController: UIViewController {
     @IBOutlet weak var triplexLinerID: UITextField!
     @IBOutlet weak var triplexStrokeLength: UITextField!
     @IBOutlet weak var triplexEff: UITextField!
-    @IBOutlet weak var strokesPerMin: UITextField!
     
     @IBOutlet weak var outputDuplex: UITextField!
     @IBOutlet weak var OutputTriplex: UITextField!
@@ -62,4 +61,6 @@ class E_ViewController: UIViewController {
     }
 
 }
+    @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)
+    }
 }
