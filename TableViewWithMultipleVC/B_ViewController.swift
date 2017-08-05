@@ -43,7 +43,7 @@ class B_ViewController: UIViewController {
     
     let outputValue = Double(firstValue!*(secondValue!-thirdValue!)/thirdValue!)
     
-    outputTextField.text = String(format:"%.2f", outputValue)
+    outputTextField.text = String(format:"%.1f bbl", outputValue)
 }
 }
 

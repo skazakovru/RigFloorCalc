@@ -15,8 +15,8 @@ class TableViewController: UITableViewController {
     var identities = [String]()
     
     override func viewDidLoad() {
-        names = ["Kill Weight Mud","Pit Gain From Slug","Level Drop After Slug Pumped","Pipe Displacement","Pump Output","Mud Compression","Bottoms Up Time","Eights", "Nineth", "Tenth"]
-        identities = ["A","B","C","D","E","F","G","H","I","J"]
+        names = ["Kill Weight Mud","Pit Gain From Slug","Level Drop After Slug Pumped","Pipe Displacement","Pump Output","Mud Compression","Bottoms Up Time","Pressure Applied for FIT", "Open Hole Diameter", "Stuck Pipe","BHP Decrease if Returns Lost", "*** Abbreviations"]
+        identities = ["A","B","C","D","E","F","G","H","I","J","K","L"]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,6 +27,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         cell?.textLabel?.text = names [indexPath.row]
+        cell?.textLabel?.font = UIFont (name: "Avenir Next", size: 20)
         return cell!
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

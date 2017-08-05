@@ -43,11 +43,12 @@ class E_ViewController: UIViewController {
         let sixValue = Double (triplexEff.text!)
         let eightValue = Double (duplexRodOD.text!)
         
+        
         if firstValue != nil && secondValue != nil && thirdValue != nil &&  eightValue != nil {
         
         let outputValue1 = Double (0.0001619 * (2 * (firstValue! * firstValue! - eightValue! * eightValue!)) * secondValue! * thirdValue! / 100)
             
-                 outputDuplex.text = String (format: "%.5f", outputValue1)
+                 outputDuplex.text = String (format: "%.5f bbl/stk", outputValue1)
             
         } else if fourthValue != nil && fifthValue != nil && sixValue != nil {
             
@@ -55,7 +56,7 @@ class E_ViewController: UIViewController {
             let outputValue2 = Double (0.0002428 * fourthValue! * fourthValue! * fifthValue! * sixValue! / 100)
         
        
-            OutputTriplex.text = String (format: "%.5f", outputValue2)
+            OutputTriplex.text = String (format: "%.5f bbl/stk", outputValue2)
             
         
     }

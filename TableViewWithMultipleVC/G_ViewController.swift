@@ -61,11 +61,11 @@ class G_ViewController: UIViewController {
             if value1 != nil && value2 != nil && value3 != nil {
                 let annVolume = (value1! * value1! * value2! + value3! * value3! * (value4! - value2!)) / 1029.4 - dpVolume
                 
-                annularVolumeBbl.text = String (format: "%.0f", annVolume)
+                annularVolumeBbl.text = String (format: "%.0f bbl", annVolume)
               
         let timeToBU = Double (annVolume) / value13!
                 
-                bottomsUpMin.text = String (format: "%.0f", timeToBU)
+                bottomsUpMin.text = String (format: "%.0f min", timeToBU)
         
             }
         }

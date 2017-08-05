@@ -44,11 +44,11 @@ class C_ViewController: UIViewController {
             
          let outputValue1 = Double((1029.4 * secondValue!)/(firstValue! * firstValue!) * ((thirdValue!/fourthValue!) - 1))
             
-            feetDropLevel.text = String (format: "%.0f", outputValue1)
+            feetDropLevel.text = String (format: "%.0f ft", outputValue1)
             
             let outputValue2 = Double((outputValue1) / 3.281)
             
-            metersDropLevel.text = String (format: "%.1f", outputValue2)
+            metersDropLevel.text = String (format: "%.1f m", outputValue2)
     }
     }
 

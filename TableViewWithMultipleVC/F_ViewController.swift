@@ -50,9 +50,9 @@ class F_ViewController: UIViewController {
         
         if firstValue != nil && secondValue != nil && thirdValue != nil {
             
-            let outPut = "\(firstValue! * secondValue! * thirdValue!)"
+            let outPut = Double (firstValue! * secondValue! * thirdValue!)
             
-            outputValue.text = outPut
+            outputValue.text = String (format: "%.1f bbl", outPut)
           
         }
     }

@@ -41,12 +41,12 @@ class A_ViewController: UIViewController {
             
             let outputValue = Double((secondValue! * 19.23)/thirdValue! + firstValue!)
             
-            outputTextField.text = String(format:"%.2f", outputValue)
+            outputTextField.text = String(format:"%.2f ppg", outputValue)
             
         } else if firstValue != nil && secondValue != nil && thirdValue != nil || fourthValue != nil {
             
             let outputValue = Double((secondValue! * 19.23)/(fourthValue! * 3.281) + firstValue!)
-             outputTextField.text = String(format:"%.2f", outputValue)
+             outputTextField.text = String(format:"%.2f ppg", outputValue)
         }
 }
     @IBAction func gestureTapped(_ sender: Any) {
