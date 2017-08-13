@@ -13,7 +13,7 @@ class A_ViewController: UIViewController {
     @IBOutlet weak var originalMWTextField: UITextField!
     @IBOutlet weak var shutIDPPtextField: UITextField!
     @IBOutlet weak var trueVDtextField: UITextField!
-    @IBOutlet weak var metersTVDtextField: UITextField!
+    @IBOutlet weak var switchTapped: UISwitch!
     @IBOutlet weak var outputTextField: UITextField!
     
     override func viewDidLoad() {
@@ -22,35 +22,29 @@ class A_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-        var firstValue = Double(originalMWTextField.text!)
-        let secondValue = Double(shutIDPPtextField.text!)
-        let thirdValue = Double(trueVDtextField.text!)
-        let fourthValue = Double(metersTVDtextField.text!)
-        
-        let numberFormatter = NumberFormatter()
-        firstValue = Double(numberFormatter.number(from: originalMWTextField.text!)!)
 
+
+        let num = NumberFormatter()
+        let firstValue = Double(truncating: num.number(from:originalMWTextField.text!)!)
+        let secondValue = Double(truncating: num.number(from: shutIDPPtextField.text!)!)
+        let thirdValue = Double(truncating: num.number(from: trueVDtextField.text!)!)
         
-        if firstValue != nil && secondValue != nil && thirdValue != nil {
+        if switchTapped.isOn {
+            let outputValue = Double((secondValue * 19.23)/thirdValue + firstValue)
             
-            let outputValue = Double((secondValue! * 19.23)/thirdValue! + firstValue!)
+            outputTextField.text = String(format:"%.2f ppg. Round up if required!", outputValue)
             
-            outputTextField.text = String(format:"%.2f ppg", outputValue)
+        } else {
+           let outputValue = Double((secondValue * 19.23)/(thirdValue * 3.281) + firstValue)
             
-        } else if firstValue != nil && secondValue != nil && thirdValue != nil || fourthValue != nil {
-            
-            let outputValue = Double((secondValue! * 19.23)/(fourthValue! * 3.281) + firstValue!)
-             outputTextField.text = String(format:"%.2f ppg", outputValue)
+             outputTextField.text = String(format:"%.2f ppg. Round up if required!", outputValue)
         }
-}
+        }
+      
     @IBAction func gestureTapped(_ sender: Any) {
         view.endEditing(true)
     }
-
 }
+

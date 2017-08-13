@@ -15,7 +15,8 @@ class I_ViewController: UIViewController {
     @IBOutlet weak var bitSize: UITextField!
     @IBOutlet weak var pumpOutput: UITextField!
     @IBOutlet weak var openHoleLength: UITextField!
-    @IBOutlet weak var ouputLable: UILabel!
+    @IBOutlet weak var outputTextField: UITextField!
+    @IBOutlet weak var switchForMeters: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +30,25 @@ class I_ViewController: UIViewController {
     }
     
     @IBAction func calculateTapped(_ sender: Any) {
-        let firstValue = Double (measuredLagTime.text!)
-        let secondValue = Double (annularVolume.text!)
-        let thirdValue = Double (bitSize.text!)
-        let fourthValue = Double (pumpOutput.text!)
-        let fifthValue = Double (openHoleLength.text!)
         
-        if firstValue != nil && secondValue != nil && thirdValue != nil && fourthValue != nil && firstValue != nil {
+             let num = NumberFormatter()
+        let firstValue = Double(truncating: num.number(from:measuredLagTime.text!)!)
+        let secondValue = Double(truncating: num.number(from:annularVolume.text!)!)
+        let thirdValue = Double(truncating: num.number(from: bitSize.text!)!)
+        let fourthValue = Double(truncating: num.number(from: pumpOutput.text!)!)
+        let fifthValue = Double(truncating: num.number(from: openHoleLength.text!)!)
+        
+        if switchForMeters.isOn {
+            let outputValue = sqrt((firstValue - secondValue / fourthValue) * fourthValue * 1029.4 / fifthValue + thirdValue * thirdValue)
             
-            let outputValue = sqrt((firstValue! - secondValue! / fourthValue!) * fourthValue! * 1029.4 / fifthValue! + thirdValue! * thirdValue!)
+            outputTextField.text = String (format: "%.2f in", outputValue)
             
-            ouputLable.text = String (format: "%.2f in", outputValue)
+        } else {
+            
+            let outputValue = sqrt((firstValue - secondValue / fourthValue) * fourthValue * 1029.4 / (fifthValue * 3.281) + thirdValue * thirdValue)
+            
+            outputTextField.text = String (format: "%.2f in", outputValue)
         }
-        
-        
     }
     @IBAction func gestureTapped(_ sender: Any) {view.endEditing(true)
     }

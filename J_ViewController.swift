@@ -15,11 +15,11 @@ class J_ViewController: UIViewController {
     @IBOutlet weak var overPull: UITextField!
     
     @IBOutlet weak var feetStuck: UILabel!
+    @IBOutlet weak var metersStuck: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,17 +28,22 @@ class J_ViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: Any) {
-        let firstValue = Double (drillPipeWeight.text!)
-        let secondValue = Double (stretchIn.text!)
-        let thirdValue = Double (overPull.text!)
+
         
-        if firstValue != nil && secondValue != nil && thirdValue != nil {
+        let num = NumberFormatter()
+        let firstValue = Double(truncating: num.number(from:drillPipeWeight.text!)!)
+        let secondValue = Double(truncating: num.number(from: stretchIn.text!)!)
+        let thirdValue = Double(truncating: num.number(from: overPull.text!)!)
+        
             
-            let calculatedValue = 735294 * secondValue! * firstValue! / thirdValue!
+            let calculatedValue = 735294 * secondValue * firstValue / thirdValue
             
-            feetStuck.text = String (format: "%.0f ft", calculatedValue)
+            feetStuck.text = String (format: "Estimated stuck at %.0f ft", calculatedValue)
+            
+            let calculatedValue2 = calculatedValue / 3.281
+             metersStuck.text = String (format: "Estimated stuck at %.0f meters", calculatedValue2)
         }
-    }
+    
 
     @IBAction func gesturetapped(_ sender: Any) {view.endEditing(true)
     }
