@@ -486,7 +486,7 @@
 				PROVISIONING_PROFILE = "fab9dbf1-5cb1-493b-bb9f-d9d6dd5198ff";
 				PROVISIONING_PROFILE_SPECIFIER = RigFloorCalcDevelopment;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -506,7 +506,7 @@
 				PROVISIONING_PROFILE = "cbae609d-1d2f-4c2d-b0d4-682f7b59e384";
 				PROVISIONING_PROFILE_SPECIFIER = RigFloorCalcDistribution;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
