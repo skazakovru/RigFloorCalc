@@ -42,17 +42,21 @@ class F_ViewController: UIViewController {
     }
     @IBAction func calculateTapped(_ sender: Any) {
    
-        let num = NumberFormatter()
-        let firstValue = Double(truncating: num.number(from:mudVolumeTextField.text!)!)
-        let secondValue = Double(truncating: num.number(from: pressureAppliedTextField.text!)!)
+     
+        let firstValue = Double(mudVolumeTextField.text!)
+        let secondValue = Double(pressureAppliedTextField.text!)
         let thirdValue = Double(resultLable.text!)
         
+      
+        if firstValue != nil && secondValue != nil && thirdValue != nil {
+        
             
-        let outPut = Double (firstValue * secondValue * thirdValue!)
+        let outPut = Double (firstValue! * secondValue! * thirdValue!)
             
             outputValue.text = String (format: "%.1f bbl", outPut)
     }
-    
+    }
+
     @IBAction func gestureTapped(_ sender: Any) {
          view.endEditing(true)
     }

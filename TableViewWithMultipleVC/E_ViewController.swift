@@ -25,9 +25,9 @@ class E_ViewController: UIViewController {
     @IBAction func calculateTappedButton(_ sender: Any) {
         
            let num = NumberFormatter()
-        let firstValue = Double(truncating: num.number(from: duplexLinerID.text!)!)
-        let secondValue = Double(truncating: num.number(from: duplexStrokeLength.text!)!)
-        let thirdValue = Double(truncating: num.number(from: duplexEff.text!)!)
+        let firstValue = Double(num.number(from: duplexLinerID.text!)!)
+        let secondValue = Double(num.number(from: duplexStrokeLength.text!)!)
+        let thirdValue = Double(num.number(from: duplexEff.text!)!)
 
         let outputValue1 = Double (0.0002428 * firstValue * firstValue * secondValue * thirdValue / 100)
         

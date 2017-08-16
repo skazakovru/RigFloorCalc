@@ -26,9 +26,9 @@ class D_ViewController: UIViewController {
     
         
         let numFor = NumberFormatter()
-        let firstValue = Double(truncating: numFor.number (from: pipeIDTextField.text!)!)
-        let secondValue = Double(truncating: numFor.number(from: pipeODTextField.text!)!)
-        let thirdValue = Double(truncating: numFor.number(from: feetStandLengthTextField.text!)!)
+        let firstValue = Double(numFor.number (from: pipeIDTextField.text!)!)
+        let secondValue = Double(numFor.number(from: pipeODTextField.text!)!)
+        let thirdValue = Double(numFor.number(from: feetStandLengthTextField.text!)!)
 
         if tappedSwitch1.isOn {
             

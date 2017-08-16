@@ -32,11 +32,11 @@ class I_ViewController: UIViewController {
     @IBAction func calculateTapped(_ sender: Any) {
         
              let num = NumberFormatter()
-        let firstValue = Double(truncating: num.number(from:measuredLagTime.text!)!)
-        let secondValue = Double(truncating: num.number(from:annularVolume.text!)!)
-        let thirdValue = Double(truncating: num.number(from: bitSize.text!)!)
-        let fourthValue = Double(truncating: num.number(from: pumpOutput.text!)!)
-        let fifthValue = Double(truncating: num.number(from: openHoleLength.text!)!)
+        let firstValue = Double(num.number(from:measuredLagTime.text!)!)
+        let secondValue = Double(num.number(from:annularVolume.text!)!)
+        let thirdValue = Double(num.number(from: bitSize.text!)!)
+        let fourthValue = Double(num.number(from: pumpOutput.text!)!)
+        let fifthValue = Double(num.number(from: openHoleLength.text!)!)
         
         if switchForMeters.isOn {
             let outputValue = sqrt((firstValue - secondValue / fourthValue) * fourthValue * 1029.4 / fifthValue + thirdValue * thirdValue)

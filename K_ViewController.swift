@@ -28,11 +28,11 @@ class K_ViewController: UIViewController {
     @IBAction func calculateBtnTapped(_ sender: Any) {
         
         let num = NumberFormatter()
-        let firstValue = Double(truncating: num.number(from:annCap.text!)!)
-        let secondValue = Double(truncating: num.number(from:lightFluidAddedBbl.text!)!)
-        let thirdValue = Double(truncating: num.number(from: addedFluidWeight.text!)!)
-        let fourthValue = Double(truncating: num.number(from: originalMudWeight.text!)!)
-        let fifthValue = Double(truncating: num.number(from: trueVerticalDepth.text!)!)
+        let firstValue = Double(num.number(from:annCap.text!)!)
+        let secondValue = Double(num.number(from:lightFluidAddedBbl.text!)!)
+        let thirdValue = Double(num.number(from: addedFluidWeight.text!)!)
+        let fourthValue = Double(num.number(from: originalMudWeight.text!)!)
+        let fifthValue = Double(num.number(from: trueVerticalDepth.text!)!)
         
         if switchOffForMeters.isOn {
             
