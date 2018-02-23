@@ -422,10 +422,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bbl" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSQ-t5-6ZG">
-                                        <rect key="frame" x="178" y="0.0" width="110" height="30"/>
+                                        <rect key="frame" x="241" y="0.0" width="47" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="110" id="bBC-y6-9T0"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="bBC-y6-9T0"/>
                                         </constraints>
                                         <color key="textColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -1884,14 +1884,19 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <gestureRecognizers/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.44125302360000002" green="1" blue="0.77778555329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="DOq-Ua-KX0" firstAttribute="top" secondItem="pjz-7q-JiM" secondAttribute="bottom" constant="5" id="IQa-yB-i84"/>
                             <constraint firstAttribute="trailing" secondItem="DOq-Ua-KX0" secondAttribute="trailing" constant="5" id="WKI-fR-LkE"/>
                             <constraint firstItem="DOq-Ua-KX0" firstAttribute="leading" secondItem="YPR-oH-Uzo" secondAttribute="leading" constant="5" id="tzG-mx-ynD"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UOc-gl-7m3" appends="YES" id="I1P-RZ-hmV"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="annularVolume" destination="2m6-86-Abp" id="Ieg-7c-3UX"/>
@@ -1904,9 +1909,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yc9-on-Iqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="01o-3U-7IF">
+                <tapGestureRecognizer id="UOc-gl-7m3">
                     <connections>
-                        <action selector="gestureTapped:" destination="NM1-O5-0hT" id="P6F-st-Thh"/>
+                        <action selector="screenTapped:" destination="NM1-O5-0hT" id="klD-Tx-bLt"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -2028,16 +2033,16 @@
                                         <rect key="frame" x="0.0" y="245.5" width="310" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surface Pressure to Apply:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-96-9jf">
-                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="psi" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dk0-9H-lqa">
-                                                <rect key="frame" x="190" y="0.0" width="120" height="30"/>
+                                                <rect key="frame" x="253.5" y="0.0" width="56.5" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="Nku-Ch-cUk"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="Nku-Ch-cUk"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>

@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Foundation
+
 class I_ViewController: UIViewController {
 
     @IBOutlet weak var measuredLagTime: UITextField!
@@ -50,6 +52,8 @@ class I_ViewController: UIViewController {
             outputTextField.text = String (format: "%.2f in", outputValue)
         }
     }
-    @IBAction func gestureTapped(_ sender: Any) {view.endEditing(true)
+
+        @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {view.endEditing(true)
+        }
     }
-}
+

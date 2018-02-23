@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Foundation
+
 class J_ViewController: UIViewController {
 
     @IBOutlet weak var drillPipeWeight: UITextField!

@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Foundation
+
 class K_ViewController: UIViewController {
     
     @IBOutlet weak var annCap: UITextField!
