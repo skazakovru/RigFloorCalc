@@ -26,7 +26,6 @@ class H_ViewController: UIViewController {
     @IBAction func calculateButtonTapped(_ sender: Any) {
         
         let num = NumberFormatter()
-        num.locale = Locale.current
         let firstValue = Double(num.number(from:shoeTVD.text!)!)
         let secondValue = Double(num.number(from: mudWeight.text!)!)
         let thirdValue = Double(num.number(from: targetFIT.text!)!)
