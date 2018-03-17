@@ -36,16 +36,16 @@ class D_ViewController: UIViewController {
         
             let calculatedValue2 = firstValue * firstValue * 0.0009714 * thirdValue + calculatedValue1
         
-        openEndBblStdTextField.text = String (format: "%.3f bbl", calculatedValue1)
-        closeEndBblStdTextField.text = String (format: "%.3f bbl", calculatedValue2)
+        openEndBblStdTextField.text = String (format: "%.1f bbl", calculatedValue1)
+        closeEndBblStdTextField.text = String (format: "%.1f bbl", calculatedValue2)
       } else {
             
             let calculatedValue3 = secondValue * 0.0003638 * thirdValue * 3.281
             
             let calculatedValue4 = firstValue * firstValue * 0.0009714 * thirdValue * 3.281 + calculatedValue3
             
-            openEndBblStdTextField.text = String (format: "%.3f bbl", calculatedValue3)
-            closeEndBblStdTextField.text = String (format: "%.3f bbl", calculatedValue4)
+            openEndBblStdTextField.text = String (format: "%.1f bbl", calculatedValue3)
+            closeEndBblStdTextField.text = String (format: "%.1f bbl", calculatedValue4)
         }
         
         }

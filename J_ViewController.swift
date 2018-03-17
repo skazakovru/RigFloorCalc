@@ -16,8 +16,10 @@ class J_ViewController: UIViewController {
     @IBOutlet weak var stretchIn: UITextField!
     @IBOutlet weak var overPull: UITextField!
     
-    @IBOutlet weak var feetStuck: UILabel!
-    @IBOutlet weak var metersStuck: UILabel!
+    @IBOutlet weak var feetStuck: UITextField!
+
+    @IBOutlet weak var metersStuck: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +42,10 @@ class J_ViewController: UIViewController {
             
             let calculatedValue = 735294 * secondValue * firstValue / thirdValue
             
-            feetStuck.text = String (format: "Estimated stuck at %.0f ft", calculatedValue)
+            feetStuck.text = String (format: "%.0f ft", calculatedValue)
             
             let calculatedValue2 = calculatedValue / 3.281
-             metersStuck.text = String (format: "Estimated stuck at %.0f meters", calculatedValue2)
+             metersStuck.text = String (format: "%.0f meters", calculatedValue2)
         }
     
 
