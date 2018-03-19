@@ -42,7 +42,7 @@ class C_ViewController: UIViewController {
         
         if firstValue != nil && secondValue != nil && thirdValue != nil && fourthValue != nil {
             
-         let outputValue1 = Double((1029.4 * secondValue!)/(firstValue! * firstValue!) * ((thirdValue!/fourthValue!) - 1))
+         let outputValue1 = Double((1029.4 * secondValue!)/(firstValue! * firstValue!) * (thirdValue!/fourthValue! - 1))
             
             feetDropLevel.text = String (format: "%.0f ft", outputValue1)
             
