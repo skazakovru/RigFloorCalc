@@ -25,10 +25,22 @@ class D_ViewController: UIViewController {
     @IBAction func calculateTappedButton(_ sender: Any) {
     
         
-        let numFor = NumberFormatter()
-        let firstValue = Double(numFor.number (from: pipeIDTextField.text!)!)
-        let secondValue = Double(numFor.number(from: pipeODTextField.text!)!)
-        let thirdValue = Double(numFor.number(from: feetStandLengthTextField.text!)!)
+        let num = NumberFormatter()
+        var value1 = pipeIDTextField.text!
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        var value2 = pipeODTextField.text!
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        var value3 = feetStandLengthTextField.text!
+        if num.number(from:value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
+        let firstValue = Double(num.number (from: value1)!)
+        let secondValue = Double(num.number(from: value2)!)
+        let thirdValue = Double(num.number(from: value3)!)
 
         if tappedSwitch1.isOn {
             

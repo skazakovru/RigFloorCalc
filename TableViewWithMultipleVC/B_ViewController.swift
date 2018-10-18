@@ -33,10 +33,23 @@ class B_ViewController: UIViewController {
     var secondValue = Double(slWeightTextField.text!)
     var thirdValue = Double(mudWeightTextField.text!)
         
-        let numberFormatter = NumberFormatter()
-        firstValue = Double(numberFormatter.number(from: slugVolumeTextField.text!)!)
-        secondValue = Double(numberFormatter.number(from: slWeightTextField.text!)!)
-        thirdValue = Double(numberFormatter.number(from: mudWeightTextField.text!)!)
+        let num = NumberFormatter()
+        var value1 = slugVolumeTextField.text!
+        var value2 = slWeightTextField.text!
+        var value3 = mudWeightTextField.text!
+        
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        if num.number(from:value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
+        firstValue = Double(num.number(from: value1)!)
+        secondValue = Double(num.number(from: value2)!)
+        thirdValue = Double(num.number(from: value3)!)
   
     
     if firstValue != nil && secondValue != nil && thirdValue != nil {

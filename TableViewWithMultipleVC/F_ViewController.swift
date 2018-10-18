@@ -41,20 +41,29 @@ class F_ViewController: UIViewController {
         
     }
     @IBAction func calculateTapped(_ sender: Any) {
-   
+        
+        let num = NumberFormatter()
+        var value1 = mudVolumeTextField.text!
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        
+        var value2 = pressureAppliedTextField.text!
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        var value3 = resultLable.text!
+        if num.number(from:value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
      
-        let firstValue = Double(mudVolumeTextField.text!)
-        let secondValue = Double(pressureAppliedTextField.text!)
-        let thirdValue = Double(resultLable.text!)
+        let firstValue = Double(num.number(from: value1)!)
+        let secondValue = Double(num.number(from: value2)!)
+        let thirdValue = Double(num.number(from: value3)!)
         
-      
-        if firstValue != nil && secondValue != nil && thirdValue != nil {
-        
-            
-        let outPut = Double (firstValue! * secondValue! * thirdValue!)
+            let outPut = Double(firstValue * secondValue * thirdValue)
             
             outputValue.text = String (format: "%.1f bbl", outPut)
-    }
     }
 
     @IBAction func gestureTapped(_ sender: Any) {

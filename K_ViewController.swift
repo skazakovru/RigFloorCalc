@@ -30,11 +30,32 @@ class K_ViewController: UIViewController {
     @IBAction func calculateBtnTapped(_ sender: Any) {
         
         let num = NumberFormatter()
-        let firstValue = Double(num.number(from:annCap.text!)!)
-        let secondValue = Double(num.number(from:lightFluidAddedBbl.text!)!)
-        let thirdValue = Double(num.number(from: addedFluidWeight.text!)!)
-        let fourthValue = Double(num.number(from: originalMudWeight.text!)!)
-        let fifthValue = Double(num.number(from: trueVerticalDepth.text!)!)
+        var value1 = annCap.text!
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        var value2 = lightFluidAddedBbl.text!
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        var value3 = addedFluidWeight.text!
+        if num.number(from:value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
+        var value4 = originalMudWeight.text!
+        if num.number(from:value4) == nil {
+            value4 = value4.replacingOccurrences(of: ".", with: ",")
+        }
+        var value5 = trueVerticalDepth.text!
+        if num.number(from:value5) == nil {
+            value5 = value5.replacingOccurrences(of: ".", with: ",")
+        }
+        
+        let firstValue = Double(truncating: num.number(from: value1)!)
+        let secondValue = Double(truncating: num.number(from: value2)!)
+        let thirdValue = Double(truncating: num.number(from: value3)!)
+        let fourthValue = Double(truncating: num.number(from: value4)!)
+        let fifthValue = Double(truncating: num.number(from: value5)!)
         
         if switchOffForMeters.isOn {
             

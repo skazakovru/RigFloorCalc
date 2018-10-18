@@ -26,9 +26,21 @@ class H_ViewController: UIViewController {
     @IBAction func calculateButtonTapped(_ sender: Any) {
         
         let num = NumberFormatter()
-        let firstValue = Double(num.number(from:shoeTVD.text!)!)
-        let secondValue = Double(num.number(from: mudWeight.text!)!)
-        let thirdValue = Double(num.number(from: targetFIT.text!)!)
+        var value1 = shoeTVD.text!
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        var value2 = mudWeight.text!
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        var value3 = targetFIT.text!
+        if num.number(from:value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
+        let firstValue = Double(num.number(from: value1)!)
+        let secondValue = Double(num.number(from: value2)!)
+        let thirdValue = Double(num.number(from: value3)!)
         
         if switchForMetersTapped.isOn {
             

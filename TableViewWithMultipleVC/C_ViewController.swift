@@ -34,11 +34,30 @@ class C_ViewController: UIViewController {
         var thirdValue = Double(slugWeight.text!)
         var fourthValue = Double(mudWeight.text!)
         
-        let numberFormatter = NumberFormatter()
-        firstValue = Double(numberFormatter.number(from: drillPipeID.text!)!)
-        secondValue = Double(numberFormatter.number(from: slugVolume.text!)!)
-        thirdValue = Double(numberFormatter.number(from: slugWeight.text!)!)
-        fourthValue = Double(numberFormatter.number(from: mudWeight.text!)!)
+    let num = NumberFormatter()
+        
+        var value1 = drillPipeID.text!
+        var value2 = slugVolume.text!
+        var value3 = slugWeight.text!
+        var value4 = mudWeight.text!
+        
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        if num.number(from: value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+        if num.number(from: value3) == nil {
+            value3 = value3.replacingOccurrences(of: ".", with: ",")
+        }
+        if num.number(from: value4) == nil {
+            value4 = value4.replacingOccurrences(of: ".", with: ",")
+        }
+        
+        firstValue = Double(num.number(from: value1)!)
+        secondValue = Double(num.number(from: value2)!)
+        thirdValue = Double(num.number(from: value3)!)
+        fourthValue = Double(num.number(from: value4)!)
         
         if firstValue != nil && secondValue != nil && thirdValue != nil && fourthValue != nil {
             

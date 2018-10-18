@@ -2344,13 +2344,13 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCU-8q-9Dj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCU-8q-9Dj">
                                                         <rect key="frame" x="0.0" y="110" width="75.5" height="25"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="25" id="bsY-wq-tBk"/>
                                                             <constraint firstAttribute="height" constant="25" id="kij-Em-vVR"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2474,7 +2474,7 @@
                         <outlet property="bottomsUpMin" destination="kvu-2t-AUv" id="Ce5-09-bf1"/>
                         <outlet property="casingID" destination="Hgw-A3-EPC" id="6E2-4m-s8X"/>
                         <outlet property="casingMD" destination="qIF-ws-Y66" id="ioc-Gb-Pqx"/>
-                        <outlet property="dpLength" destination="zCU-8q-9Dj" id="qHY-kN-4qp"/>
+                        <outlet property="dPLengthLabel" destination="zCU-8q-9Dj" id="XuG-iY-U91"/>
                         <outlet property="drillC1" destination="xRM-Xk-vV1" id="B4h-aP-D0A"/>
                         <outlet property="drillC1Length" destination="vKd-7i-OQl" id="uKh-WP-UUT"/>
                         <outlet property="drillPipe" destination="Nse-UD-756" id="fTO-BQ-4mH"/>

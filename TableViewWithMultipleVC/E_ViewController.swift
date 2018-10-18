@@ -24,12 +24,22 @@ class E_ViewController: UIViewController {
     
     @IBAction func calculateTappedButton(_ sender: Any) {
         
-           let num = NumberFormatter()
-        let firstValue = Double(num.number(from: duplexLinerID.text!)!)
-        let secondValue = Double(num.number(from: duplexStrokeLength.text!)!)
+        let num = NumberFormatter()
+        
+        var value1 = duplexLinerID.text!
+        if num.number(from:value1) == nil {
+            value1 = value1.replacingOccurrences(of: ".", with: ",")
+        }
+        var value2 = duplexStrokeLength.text!
+        if num.number(from:value2) == nil {
+            value2 = value2.replacingOccurrences(of: ".", with: ",")
+        }
+
+        let firstValue = Double(num.number(from: value1)!)
+        let secondValue = Double(num.number(from: value2)!)
         let thirdValue = Double(num.number(from: duplexEff.text!)!)
 
-        let outputValue1 = Double (0.0002428 * firstValue * firstValue * secondValue * thirdValue / 100)
+        let outputValue1 = Double (0.0002428 * firstValue * firstValue * secondValue * thirdValue / 100.0)
         
        
             OutputTriplex.text = String (format: "%.5f bbl/stk", outputValue1)
