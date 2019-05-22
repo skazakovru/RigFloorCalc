@@ -57,9 +57,9 @@ class F_ViewController: UIViewController {
             value3 = value3.replacingOccurrences(of: ".", with: ",")
         }
      
-        let firstValue = Double(num.number(from: value1)!)
-        let secondValue = Double(num.number(from: value2)!)
-        let thirdValue = Double(num.number(from: value3)!)
+        let firstValue = Double(truncating: num.number(from: value1)!)
+        let secondValue = Double(truncating: num.number(from: value2)!)
+        let thirdValue = Double(truncating: num.number(from: value3)!)
         
             let outPut = Double(firstValue * secondValue * thirdValue)
             

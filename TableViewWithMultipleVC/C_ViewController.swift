@@ -54,10 +54,10 @@ class C_ViewController: UIViewController {
             value4 = value4.replacingOccurrences(of: ".", with: ",")
         }
         
-        firstValue = Double(num.number(from: value1)!)
-        secondValue = Double(num.number(from: value2)!)
-        thirdValue = Double(num.number(from: value3)!)
-        fourthValue = Double(num.number(from: value4)!)
+        firstValue = Double(truncating: num.number(from: value1)!)
+        secondValue = Double(truncating: num.number(from: value2)!)
+        thirdValue = Double(truncating: num.number(from: value3)!)
+        fourthValue = Double(truncating: num.number(from: value4)!)
         
         if firstValue != nil && secondValue != nil && thirdValue != nil && fourthValue != nil {
             

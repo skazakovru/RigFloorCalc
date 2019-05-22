@@ -47,9 +47,9 @@ class B_ViewController: UIViewController {
         if num.number(from:value3) == nil {
             value3 = value3.replacingOccurrences(of: ".", with: ",")
         }
-        firstValue = Double(num.number(from: value1)!)
-        secondValue = Double(num.number(from: value2)!)
-        thirdValue = Double(num.number(from: value3)!)
+        firstValue = Double(truncating: num.number(from: value1)!)
+        secondValue = Double(truncating: num.number(from: value2)!)
+        thirdValue = Double(truncating: num.number(from: value3)!)
   
     
     if firstValue != nil && secondValue != nil && thirdValue != nil {

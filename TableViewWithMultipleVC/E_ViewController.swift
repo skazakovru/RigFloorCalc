@@ -35,9 +35,9 @@ class E_ViewController: UIViewController {
             value2 = value2.replacingOccurrences(of: ".", with: ",")
         }
 
-        let firstValue = Double(num.number(from: value1)!)
-        let secondValue = Double(num.number(from: value2)!)
-        let thirdValue = Double(num.number(from: duplexEff.text!)!)
+        let firstValue = Double(truncating: num.number(from: value1)!)
+        let secondValue = Double(truncating: num.number(from: value2)!)
+        let thirdValue = Double(truncating: num.number(from: duplexEff.text!)!)
 
         let outputValue1 = Double (0.0002428 * firstValue * firstValue * secondValue * thirdValue / 100.0)
         

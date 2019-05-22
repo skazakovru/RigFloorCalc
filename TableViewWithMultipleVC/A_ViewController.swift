@@ -38,10 +38,10 @@ class A_ViewController: UIViewController {
         if num.number(from: value3) == nil {
             value3 = value3.replacingOccurrences(of: ".", with: ",")
         }
-        let firstValue = Double(num.number(from:value)!)
+        let firstValue = Double(truncating: num.number(from:value)!)
         print(firstValue)
-        let secondValue = Double(num.number(from:shutIDPPtextField.text!)!)
-        let thirdValue = Double(num.number(from:value3)!)
+        let secondValue = Double(truncating: num.number(from:shutIDPPtextField.text!)!)
+        let thirdValue = Double(truncating: num.number(from:value3)!)
         
         if switchTapped.isOn {
             let outputValue = secondValue * 19.23/thirdValue + firstValue
