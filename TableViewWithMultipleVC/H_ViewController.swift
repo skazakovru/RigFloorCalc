@@ -24,7 +24,7 @@ class H_ViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: Any) {
-        
+        if let text = shoeTVD.text, !text.isEmpty {
         let num = NumberFormatter()
         var value1 = shoeTVD.text!
         if num.number(from:value1) == nil {
@@ -52,6 +52,7 @@ class H_ViewController: UIViewController {
             let outputValue = 0.052 * firstValue * 3.281 * (thirdValue - secondValue)
             
             outputTextField.text = String (format: "%.0f psi", outputValue)
+        }
         }
     }
     @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)

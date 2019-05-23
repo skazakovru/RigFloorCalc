@@ -23,7 +23,7 @@ class E_ViewController: UIViewController {
     }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-        
+        if let text = duplexLinerID.text, !text.isEmpty {
         let num = NumberFormatter()
         
         var value1 = duplexLinerID.text!
@@ -49,7 +49,7 @@ class E_ViewController: UIViewController {
         outputLiters.text = String (format: "%.2f liters/stk", outputValue2)
             
         }
-
+    }
     @IBAction func gestureTapped(_ sender: Any) { view.endEditing(true)
     }
     

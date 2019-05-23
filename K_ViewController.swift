@@ -28,7 +28,7 @@ class K_ViewController: UIViewController {
     }
     
     @IBAction func calculateBtnTapped(_ sender: Any) {
-        
+        if let text = annCap.text, !text.isEmpty {
         let num = NumberFormatter()
         var value1 = annCap.text!
         if num.number(from:value1) == nil {
@@ -77,7 +77,7 @@ class K_ViewController: UIViewController {
             equivalentMudWeight.text = String (format: "%.2f ppg", outputValue2)
         }
     }
-    
+    }
     @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)
         
     }

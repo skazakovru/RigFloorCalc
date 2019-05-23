@@ -28,6 +28,7 @@ class B_ViewController: UIViewController {
     
     
     @IBAction func calculateTappws(_ sender: Any) {
+        if let text = slugVolumeTextField.text, !text.isEmpty {
     
     var firstValue = Double(slugVolumeTextField.text!)
     var secondValue = Double(slWeightTextField.text!)
@@ -59,7 +60,7 @@ class B_ViewController: UIViewController {
     outputTextField.text = String(format:"%.1f bbl", outputValue)
 }
 }
-
+}
     @IBAction func removeKeyboard(_ sender: Any) { view.endEditing(true)
     }
 }

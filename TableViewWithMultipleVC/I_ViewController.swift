@@ -27,7 +27,7 @@ class I_ViewController: UIViewController {
     }
     
     @IBAction func calculateTapped(_ sender: Any) {
-        
+        if let text = measuredLagTime.text, !text.isEmpty {
              let num = NumberFormatter()
         var value1 = measuredLagTime.text!
         if num.number(from:value1) == nil {
@@ -67,7 +67,7 @@ class I_ViewController: UIViewController {
             outputTextField.text = String (format: "%.2f in", outputValue)
         }
     }
-
+    }
         @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {view.endEditing(true)
         }
     }

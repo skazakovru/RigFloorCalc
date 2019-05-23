@@ -23,7 +23,7 @@ class D_ViewController: UIViewController {
     }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-    
+        if let text = pipeIDTextField.text, !text.isEmpty {
         
         let num = NumberFormatter()
         var value1 = pipeIDTextField.text!
@@ -61,7 +61,7 @@ class D_ViewController: UIViewController {
         }
         
         }
-
+    }
     @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)
     }
 }

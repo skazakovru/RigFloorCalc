@@ -24,7 +24,8 @@ class A_ViewController: UIViewController {
 
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-
+        
+        if let text = originalMWTextField.text, !text.isEmpty {
 
         let num = NumberFormatter()
         
@@ -54,7 +55,8 @@ class A_ViewController: UIViewController {
              outputTextField.text = String(format:"%.2f ppg. Round up if required!", outputValue)
         }
         }
-      
+    }
+    
     @IBAction func gestureTapped(_ sender: Any) {
         view.endEditing(true)
     }

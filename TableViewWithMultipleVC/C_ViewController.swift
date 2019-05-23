@@ -29,6 +29,7 @@ class C_ViewController: UIViewController {
     
 
     @IBAction func calculateTappedButton(_ sender: Any) {
+        if let text = drillPipeID.text, !text.isEmpty {
         var firstValue = Double(drillPipeID.text!)
         var secondValue = Double(slugVolume.text!)
         var thirdValue = Double(slugWeight.text!)
@@ -70,7 +71,7 @@ class C_ViewController: UIViewController {
             metersDropLevel.text = String (format: "%.1f m", outputValue2)
     }
     }
-
+    }
     @IBAction func gestureTapped(_ sender: Any) {
         view.endEditing(true)
     }

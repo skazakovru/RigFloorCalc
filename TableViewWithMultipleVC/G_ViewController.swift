@@ -40,7 +40,7 @@ class G_ViewController: UIViewController {
     }
     
     @IBAction func calculateTappedButton(_ sender: Any) {
-
+        if let text = drillC1.text, !text.isEmpty {
         let num = NumberFormatter()
         var valueOne = casingID.text!
         var valueTwo = casingMD.text!
@@ -108,7 +108,9 @@ class G_ViewController: UIViewController {
             
             bottomsUpMin.text = String (format: "%.0f min", timeToBU)
             
-    }
+            }
+        }
+        
     }
     @IBAction func screenTapped(_ sender: Any) { view.endEditing(true)
     }

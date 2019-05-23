@@ -32,7 +32,7 @@ class J_ViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: Any) {
-
+        if let text = drillPipeWeight.text, !text.isEmpty {
         
         let num = NumberFormatter()
         var value1 = drillPipeWeight.text!
@@ -59,7 +59,7 @@ class J_ViewController: UIViewController {
             let calculatedValue2 = calculatedValue / 3.281
              metersStuck.text = String (format: "%.0f meters", calculatedValue2)
         }
-    
+    }
 
     @IBAction func gesturetapped(_ sender: Any) {view.endEditing(true)
     }

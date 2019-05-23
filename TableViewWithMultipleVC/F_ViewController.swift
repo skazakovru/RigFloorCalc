@@ -41,7 +41,7 @@ class F_ViewController: UIViewController {
         
     }
     @IBAction func calculateTapped(_ sender: Any) {
-        
+        if let text = mudVolumeTextField.text, !text.isEmpty {
         let num = NumberFormatter()
         var value1 = mudVolumeTextField.text!
         if num.number(from:value1) == nil {
@@ -65,7 +65,7 @@ class F_ViewController: UIViewController {
             
             outputValue.text = String (format: "%.1f bbl", outPut)
     }
-
+    }
     @IBAction func gestureTapped(_ sender: Any) {
          view.endEditing(true)
     }
